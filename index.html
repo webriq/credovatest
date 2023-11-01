@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRDV</title>
+</head>
+<body>
+  <p class="credova-button" data-amount="1245.67" data-type="redirect"></p>
+  <script src="https://plugin.credova.com/plugin.min.js"></script>
+  <script>
+    CRDV.plugin.config({ environment: CRDV.Environment.Sandbox, store: "ARV000" });
+    CRDV.plugin.inject("credova-button");
+  </script>
+</body>
+</html>
